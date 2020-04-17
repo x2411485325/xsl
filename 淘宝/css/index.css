@@ -1,0 +1,850 @@
+/* 
+    @规则
+        @charset        设置样式表编码
+        @import         导入其他样式文件
+        @meida          媒体查询
+        @font-face      自定义字体
+    */
+@import 'reset.css';
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('../font/iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/iconfont.woff2') format('woff2'),
+        url('../font/iconfont.woff') format('woff'),
+        url('../font/iconfont.ttf') format('truetype'),
+        url('../font/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 头部信息 */
+
+#headmessage li{
+      float: left;
+      line-height: 35px;
+      padding: 0 6px;
+      font-size: 0;
+  }
+
+#headmessage a{
+    color: #6c6c6c;
+    font-size: 12px;
+}
+#headmessage a:hover{
+    color: #f40;
+}
+
+#headmessage a.login{
+    color: #f22e00;
+}
+
+#headmessage span{
+    font-size: 12px;
+}
+
+#headmessage span.arrow{
+    margin-left: 7px;
+}
+
+#headmessage li strong{
+    font-size: 12px;
+    color: #f22e00;
+}
+
+#headmessage li span.store{
+    font-size: 12px;
+    color: #9c9c9c;
+}
+
+#headmessage li.line{
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 5px;
+}
+
+#headAd{
+    background-color: #f40d4d;
+}
+#headAd img{
+    width: 1190px;
+    height: 70px;
+}
+
+#headSearch{
+    background-color: #ffffff;
+    padding: 24px 0 10px 0;
+}
+#headSearch h1 a{
+    display: block;
+    width: 190px;
+    height: 58px;
+    background: url(//img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png) 0 0 no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+#headSearch .code{
+    width: 72px;
+    height: 86px;
+    border: 1px solid #eee;
+    position: relative;
+    margin-right: 110px;
+    text-align: center;
+}
+
+#headSearch .code img{
+    width: 62px;
+    height: 62px;
+}
+
+#headSearch .close{
+    position: absolute;
+    left: -16px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    color: #ddd;
+    cursor: pointer;
+}
+
+#headSearch .search{
+    width: 630px;
+    margin: 0 auto;
+}
+
+#headSearch .searchTab{
+    height: 22px;
+    padding-left: 17px;
+}
+#headSearch .searchTab li{
+    float: left;
+    width: 36px;
+    line-height: 22px;
+    margin-right: 4px;
+    text-align: center;
+    color: #f40;
+}
+#headSearch .searchTab li:hover{
+    background-color: #ffeee5;
+}
+
+#headSearch .searchTab li.active{
+    color: #ffffff;
+    font-weight: bold;
+    /* 颜色过渡 */
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+
+    /* 滤镜filter可兼容ie */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+
+    border-radius: 6px 6px 0 0;
+}
+
+#headSearch .searchContent{
+    height: 40px;
+}
+
+#headSearch .searchBox{
+    width: 554px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid #ff5000;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+#headSearch .searchBox input{
+    width: 490px;
+    height: 36px;
+    line-height: 36px;
+    outline: none;
+    border: none;
+    text-indent: 10px;
+    background-color: transparent;/*设置背景透明*/
+    position: absolute;
+    z-index: 1;
+}
+
+#headSearch .placeholder{
+    position: absolute;
+    top: 6px;
+    left: 14px;
+}
+
+#headSearch .placeholder span{
+    color: #9c9c9c;
+    vertical-align: 1px;
+}
+
+#headSearch .imgSearch{
+    font-size: 28px;
+    position: absolute;
+    right: 20px;
+    color: #9c9c9c;
+    top: -2px;
+    cursor: pointer;
+}
+
+#headSearch .searchContent button{
+    width: 74px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    border: none;
+    /* 颜色过渡 */
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+
+    /* 滤镜filter可兼容ie */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+    border-radius: 0 20px 20px 0;
+}
+#headSearch .hotKey{
+    height: 25px;
+    line-height: 25px;
+}
+
+#headSearch .hotKey a:hover{
+    color: #f50;
+}
+
+
+#nav h2{
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #f50;
+}
+
+
+#nav ul{
+    margin-left: 190px;
+    height: 30px;
+    /* width: 1000px; */
+    /* width: calc(100% - 190px);  支持IE9+ */
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+
+    /* 滤镜filter可兼容ie */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+
+#nav ul li{
+    float: left;
+    line-height: 30px;
+    margin: 0 7px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 5px;
+}
+
+#nav ul li.size{
+    float: left;
+    line-height: 30px;
+    margin: 0 7px;
+    font-size: 14px;
+}
+#nav ul li a{
+    color: #fff;
+}
+#nav ul li.line{
+    margin: 0;
+    padding: 0;
+}
+/* <!-- 首屏内容 --> */
+/* <!-- 侧边导航栏 --> */
+.firstLeft{
+    width: 890px;
+}
+
+.firstLeft .sideNav{
+    width: 190px;
+    height: 522px;
+    background: #eee;
+    border: 1px solid #ff5000;
+    box-sizing: border-box;
+    border-top: none;
+    padding-top: 5px;
+}
+.firstLeft .sideNav li{
+    height: 32px;
+    line-height: 32px;
+    padding-left: 25px;
+    transition: background-color 0.3s;
+    color: #999;
+    font-size: 14px;
+}
+.firstLeft .sideNav li:hover{
+    background: #ffe4dc;
+    color: #f50;
+}
+.firstLeft .sideNav li:hover a{
+    color: #f50;
+}
+.firstLeft .sideNav a:hover{
+    text-decoration: underline;
+}
+.sideNav li a{
+    font-size: 14px;
+    color: #666;
+}
+.sideNav li span{
+    font-size: 12px;
+    margin-right: 5px;
+}
+/* <!-- 图片1容器 --> */
+.firstLeft .img1Box{
+    width: 690px;
+    height: 282px;
+    padding-top: 10px;
+}
+.firstLeft .pic{
+    width: 520px;
+    position: relative;
+}
+.firstLeft .pic button{
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);/*支持IE9+*/
+    /* background-color: #000\9;    IE9一下浏览器
+   filter alpha(opacity=30);    透明 */
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    display: none;
+}
+.firstLeft .pic button.leftBtn{
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.firstLeft .pic button.rightBtn{
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+.firstLeft .pic:hover button{
+    display: block;
+}
+.firstLeft .pic .circle{
+    position: absolute;
+    bottom: 15px;
+    height: 8px;
+    text-align: center;
+    left: 50%;
+    border-radius: 10px;
+    font-size: 0;
+    margin-left: -35px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.firstLeft .pic .circle span{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 3px;
+}
+.firstLeft .pic .circle span.active{
+    background-color: #ff5000;
+}
+
+.firstLeft .ad{
+    width: 160px;
+}
+
+.firstLeft .ad img{
+    width: 160px;
+}
+
+/* <!--  图片2容器   --> */
+.firstLeft .img2Box{
+    width: 690px;
+    height: 220px;
+    margin-top: 10px;
+}
+
+.firstLeft .img2Box .picTitle{
+    height: 20px;
+}
+
+.firstLeft .img2Box .picTitle .text{
+    height: 17px;
+    line-height: 17px;
+}
+
+.firstLeft .img2Box .picTitle .text .bg{
+    background: url(../images/image.png) no-repeat left;
+    padding-left: 136px;
+    color: #666;
+}
+
+.firstLeft .img2Box .picTitle .text i{
+    color: #ff1648;
+}
+
+.firstLeft .img2Box .picTitle .line{
+    height: 3px;
+    background-color: #ff1648;
+    position: relative;
+}
+
+.firstLeft .img2Box .picTitle .line span{
+    width: 87px;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+}
+
+.firstLeft .img2Box .img{
+    font-size: 0;
+    height: 200px;
+    width: 520px;
+    background-color: #fff;
+    position: relative;
+
+    display: table-cell;
+    vertical-align: middle;    /*用表格形式解决居中
+    
+    /* display: flex;
+    justify-content: center;
+    align-items: center;        弹性盒模型解决居中  兼容IE10+ */
+
+}
+
+.firstLeft .img2Box .img img{
+    margin: 0 10px;
+}
+
+.firstLeft .img2Box .ad .title{
+    height: 20px;
+    line-height: 20px;
+}
+/* <!-- 淘宝头条 --> */
+.news{
+    width: 890px;
+    height: 100px;
+    background: #999;
+}
+
+
+/* <!-- 右边内容 --> */
+.firstRight{
+    width: 290px;
+    margin-top: 10px;
+}
+/* 用户 */
+.firstRight .user{
+    height: 140px;
+    padding-top: 5px;
+    background-image: url(../images/user_bg.png);
+}
+
+.firstRight .user .avatar{
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.firstRight .user .avatar img{
+    width: 50px;
+    height: 50px;
+}
+.firstRight .user .username{
+    text-align: center;
+    line-height: 16px;
+}
+
+.firstRight .user .members{
+    text-align: center;
+    font-size: 0;
+}
+
+.firstRight .user .members a{
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 9px;
+    padding: 0 10px 0 20px;
+    margin: 0 2px;
+    /* background-color: #ffe4dc; */
+}
+
+.firstRight .user .members a.gold{
+    background: #ffe4db url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png) 0 -572px no-repeat;
+}
+.firstRight .user .members a.club{
+    background: #ffe4db url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png) 0 -528px no-repeat;
+}
+
+.firstRight .user .btn{
+    text-align: center;
+    
+}
+.firstRight .user .btn button{
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    margin: 12px 2px 0 2px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient(to right,#ff9000,#ff5000);
+
+    /* 滤镜filter可兼容ie */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+.firstRight .user .btn button.login{
+    width: 92px;
+}
+
+.firstRight .tipOff{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #f40;
+    background: #ffe4dc;
+    text-align: center;
+}
+
+.firstRight .tipOff i{
+    font-size: 12px;
+    vertical-align: 1px;
+    position: relative;
+    left: 30px;
+}
+
+/* 公告区 */
+.firstRight .notice{
+    height: 108px;
+    background-color: #fff;
+}
+
+.firstRight .notice .title{
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+.firstRight .notice .title li{
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+
+.firstRight .notice .title li.active{
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+}
+
+.firstRight .notice .title li a:hover{
+    color: #f40;
+}
+
+.firstRight .notice .content{
+    margin:  0 12px;
+    padding-top: 10px;
+}
+
+
+.firstRight .notice .content li{
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    float: left;
+    width: 130px;
+}
+.firstRight .notice .content li a:hover,.firstRight .notice .content li.item1 a{
+    color: #ff5000;
+}
+
+.firstRight .notice .content li.item1{
+    width: 100%;
+}
+
+/* 图标区域 */
+.firstRight .icon{
+    width: 100%;
+    height: 155px;
+    background-color: #fff;
+    table-layout: fixed;   /*定义列宽的算法， fixed的计算方式为根据表格宽度自动计算，每列宽度为均分整个表格的宽度*/
+}
+
+.firstRight .icon td{
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+.firstRight .icon td span{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(https://img.alicdn.com/tfs/TB1eiXTXlTH8KJjy0FiXXcRsXXa-24-595.png) no-repeat;
+}
+
+.firstRight .icon td i{
+    line-height: 34px;
+    color: #333;
+}
+.firstRight .icon .item1 span{
+    background-position: 0 0;
+}
+.firstRight .icon .item2 span{
+    background-position: 0 -87px;
+}
+.firstRight .icon .item3 span{
+    background-position: 0 -44px;
+}
+.firstRight .icon .item4 span{
+    background-position: 0 -132px;
+}
+.firstRight .icon .item5 span{
+    background-position: 0 -176px;
+}
+.firstRight .icon .item6 span{
+    background-position: 0 -220px;
+}
+.firstRight .icon .item7 span{
+    background-position: 0 -264px;
+}
+.firstRight .icon .item8 span{
+    background-position: 0 -308px;
+}
+
+
+.firstRight .app{
+    background-color: #fff;
+}
+.firstRight .app .title{
+    height: 30px;
+    line-height: 30px;
+}
+.firstRight .app h3{
+    font-size: 14px;
+    padding-left: 14px;
+}
+.firstRight .app a{
+    margin-right: 10px;
+}
+.firstRight .app a:hover{
+    color: #f40;
+}
+.firstRight .app .appIcon{
+    text-align: center;
+    font-size: 0;
+    padding: 5px 0 11px  0;
+}
+
+.firstRight .app .appIcon li{
+    display: inline-block;
+    margin: 0 10px 8 10px;
+}
+
+.firstRight .app .appIcon li img{
+    width: 32px;
+    height: 32px;
+}
+
+/* 有好货与爱逛街 */
+
+.goods{
+    width: 590px;
+    height: 658px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.goods .head{
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.goods .head h3{
+    font-size: 0;
+    font-weight: normal;
+}
+.goods .head h3 img{
+    height: 24px;
+}
+.goods .head h3 span{
+    vertical-align: middle;
+    color: #ccc;
+    font-size: 20px;
+    margin: 0 5px;
+}
+.goods .head h3 i{
+    font-size: 12px;
+    vertical-align: middle;
+    color: #999;
+    padding-left: 10px;
+}
+.goods .head .change{
+    color: #999;
+}
+.goods .list{
+    font-size: 0;
+    text-align: center;
+}
+.goods .list li{
+    width: 180px;
+    display: inline-block;
+    margin: 0 2px 35px 2px;
+    text-align: left;
+}
+
+.goods .list li img{
+    width: 180px;
+    height: 180px;
+}
+.goods .list li h4{
+    font-size: 16px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: normal;
+}
+.goods .list li h4 a:hover{
+    color: #f40;
+}
+.goods .list li .text{
+    height: 24px;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    overflow: hidden;
+}
+.goods .list li .text a{
+    color: #999;
+}
+
+.goods .list li .comment{
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #35b1ff;
+    margin-top: 12px;
+}
+.goods .list li .comment span{
+    font-size: 14px;
+    margin-right: 4px;
+}
+
+/* 爱逛街 */
+
+.shopping .list li .text{
+    height: 44px;
+    line-height: 22px;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top: 11px;
+}
+
+.shopping .list li .text span{
+    font-size: 14px;
+    color: #ebebeb;
+    position: relative;
+    top: -5px;
+}
+
+.shopping .list li .text a:hover{
+    color: #f40;
+}
+.shopping .list li .comment{
+    color: #999;
+}
+.shopping .list li .comment i{
+    margin-left: 5px;
+}
+
+.shopping .list li .comment img{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+/* 右侧固定导航栏 */
+#tool{
+    width: 50px;
+    height: 350px;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+}
+#tool span{
+    font-size: 32px;
+    color: #ff7f13;
+    width: 50px;
+    height: 36px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    top: -16px;
+}
+
+#tool div{
+    height: 350xpx;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#tool a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    word-break: keep-all;  /*在空格处强制换行*/
+    padding-top: 6px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* 一个：是伪类  两个：：是伪元素 */
+#tool a:after{
+    content: '';
+    border-bottom: 1px solid #efefef;
+    width: 34px;
+    position: absolute;
+    left: 8px;
+    bottom: 0;
+    z-index: 1;
+}
+
+#tool a.item6{
+    line-height: 35px;
+}
+
+#tool a:hover,#tool a.active{
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(135deg,#ff9000,#ff5000);
+
+    /* 滤镜filter可兼容ie */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+#tool a:hover:after,#tool a.active:after{
+    border: none;
+}
